@@ -12,10 +12,7 @@ const app = express();
 app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
-    origin: [
-        'http://localhost:5173',
-        'https://flight-search-frontend-dzd90csdw-richard-lys-projects.vercel.app'
-    ],
+    origin: 'https://flight-search-frontend-dnryh473l-richard-lys-projects.vercel.app',
     credentials: true
 }));
 app.use('/flights', flightsRouter);
